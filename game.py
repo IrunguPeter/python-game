@@ -6,18 +6,14 @@ import random
 x=random.randrange(1,100)
 #x is a random integer between 1 and 100
 
-def game():
-    y=int(input("Input your LUcky number  "))
+for i in range(20):
+    y=int(input("Enter your Lucky number   "))
 
-    print(x)
-
-    if y==x:
-        print("You got it")
-        
-    elif y>x:
-        print("Too high")
-    else:
+    if x==y:
+        print(f"You got it in {i} attempts ")
+        break
+    
+    elif x>y:
         print("Too low")
-
-for i in range (7):
-    game()
+    else:
+        print("Too high")
