@@ -22,7 +22,7 @@ for x in range(d):
 
         if x==y:
             print(f"You got it in {i+1} attempts ")
-            e=(1+1)
+            e=(i+1)
             Scores.append(e)
                   
             break
@@ -34,3 +34,10 @@ for x in range(d):
 
 plt.bar(Names, Scores)
 plt.show()
+
+
+minval=min(Scores)
+index=Scores.index(minval)
+Winner=Names[index]
+print(f"The Winner is {Winner}")
+
